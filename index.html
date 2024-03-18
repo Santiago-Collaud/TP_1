@@ -9,10 +9,12 @@
         .perfil img{
             border-radius: 50%;
         }
+
         body{
             background-image: url(/src/background\ gris.jpg);
             background-size: cover;       
         }
+
         contenedor1
         {
             color: azure;
@@ -20,13 +22,15 @@
             font-family:'Courier New', Courier, monospace;
             
         }
+
         nav{
             background-color: rgb(236, 235, 235);
             border: 2px solid rgb(73, 73, 73);
             border-radius: 5%;
             font-family:Arial, Helvetica, sans-serif;
             font-style: italic;   
-        }    
+        }
+
         button
         {
             background-color: rgb(236, 235, 235);
@@ -36,9 +40,27 @@
             text-decoration: none;
             border-radius: 50%;
         }
+        
         button:hover {
             background-color: #cac2c2;
             border-radius: 30%;
+        }
+        
+        .button2:hover {
+            background-color: #db40cc;
+            border-radius: 30%;
+        }
+
+        .button3{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            text-decoration: none;
+            border-radius: 10%;
+        }
+
+        .button3:hover {
+            background-color: #4bed60;
+            
         }
 
         .contenedor2{
@@ -47,20 +69,30 @@
             background-image: url(/src/Fondo_quien_soy.jpg);
             position: relative; /* Establece el contenedor como posición relativa */ 
         }
+
         h2{
             font-family:monospace;
         }
+
         .Imagenes_productos
         {
             border-radius: 50%;
             height: 200px;
             width: 200px;
         }
+
         title
         {
             font-size: 100px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
+
+        h3
+        {
+            font-size: 70px;
+            font-family: cursive;
+        }
+
     </style>
 </head>
 <body>
@@ -93,28 +125,45 @@
     <br>
     <div>
         <center>
-        <span><button><img class="Imagenes_productos" src="/src/DiseñoSoft.png" alt="Imagen Diseño de software" title="Diseño de software de escritorio"></button></span>
+        <span><button class="button2"><a href="#DiseñoSoft"><img class="Imagenes_productos" src="/src/DiseñoSoft.png" alt="Imagen Diseño de software" title="Diseño de software de escritorio"></a></button></span>
             
-        <span><button><img class="Imagenes_productos" src="/src/DiseñoWeb.jpg" alt="Imagen Diseño web" title="Diseño web"></button></span>
+        <span><button class="button2"><img class="Imagenes_productos" src="/src/DiseñoWeb.jpg" alt="Imagen Diseño web" title="Diseño web"></button></span>
         </center>
     </div>
     <br>
     <div>
         <center>
-            <span><button><img class="Imagenes_productos" src="/src/Audio.jpg" alt="Imagen Diseño de Audio" title="Gestion y realizacion de spots de audio"></button></span>
+            <span><button class="button2"><img class="Imagenes_productos" src="/src/Audio.jpg" alt="Imagen Diseño de Audio" title="Gestion y realizacion de spots de audio"></button></span>
     
-            <span><button><img class="Imagenes_productos" src="/src/EdicionAudio.jpg" alt="Imagen Diseño edicion" title="Produccion y realizacion de sposts de video"></button></span>
+            <span><button class="button2"><img class="Imagenes_productos" src="/src/EdicionAudio.jpg" alt="Imagen Diseño edicion" title="Produccion y realizacion de sposts de video"></button></span>
 
-            <span><button><img class="Imagenes_productos" src="/src/Fotografia.jpg" alt="Imagen Diseño de software" title="Fotografia de productos y Eventos"></button></span>
+            <span><button class="button2"><img class="Imagenes_productos" src="/src/Fotografia.jpg" alt="Imagen Diseño de software" title="Fotografia de productos y Eventos"></button></span>
         </center>
     </div>
     <br>
     <div>
         <center>
-            <span><button><img class="Imagenes_productos" src="/src/Radio.jpg" alt="Imagen radio" title="Gestion de contenido para radios en linea y aire"></button></span>
+            <span><button class="button2"><img class="Imagenes_productos" src="/src/Radio.jpg" alt="Imagen radio" title="Gestion de contenido para radios en linea y aire"></button></span>
         </center>
     </div>
-    
+    <br>
+    <br>
+    <div class="contenedor2">
+        <br>
+        <Span><center><h3>Potencia tu empresa con nosotros</h3></center></span> 
+        <hr>
+        <center><button><a href="contact.html">Contacto</a></button></center>
+        <br>
+    </div>
+<br>
+<br>
+    <div>
+        <section id="DiseñoSoft" style="position: relative;">
+            <span><img src="/src/DiseñoSoft_grande.jpg" alt="" height="100%" width="100%"></span>
+            <span style="position: absolute; top: 20%; left: 50%; color: white; font-size: 24px; font-weight: bold;">Diseño de software a medida para empresas y comercios. Nos adaptamos a tus necesidades para lograr optimizar los tiempos de cada proceso productivo.</span>
+            <span style="position: absolute; top: 80%; left: 80%"><button class="button3">contacto</button></span>
+        </section>
+    </div>
 </body>
 <footer>
     <center>Santiago Collaud - 2024</center>
