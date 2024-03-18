@@ -34,22 +34,32 @@
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 20px;
             text-decoration: none;
+            border-radius: 50%;
         }
         button:hover {
             background-color: #cac2c2;
             border-radius: 30%;
         }
-        
+
         .contenedor2{
             height:"100%";
             width:"100%";
             background-image: url(/src/Fondo_quien_soy.jpg);
-            position: relative; /* Establece el contenedor como posición relativa */
-            
-            
+            position: relative; /* Establece el contenedor como posición relativa */ 
         }
         h2{
             font-family:monospace;
+        }
+        .Imagenes_productos
+        {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        }
+        title
+        {
+            font-size: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
     </style>
 </head>
@@ -58,7 +68,7 @@
     <contenedor1>
         <center>
             <span class="perfil">
-                <img src="/src/Autoretrato 2.jpg" alt="Foto de perfil" height="200px" width="200px">
+               <button><a href="aboutMe.html"><img src="/src/Autoretrato 2.jpg" alt="Foto de perfil" height="200px" width="200px"></a></button>
             </span>
         </center>
         <center>
@@ -77,10 +87,33 @@
         <span><center><h2>Capaz de generar ideas y llevarlas a la realidad de la mejor manera y disfrutar de proceso.</h2></center></span>
         <span><center><h2>Hacer grandes cosas es mi meta principal y quiero acompañarte en tus proyectos.</h2></center></span>
         <hr>
-        <center><button>Vamos juntos</button></center>
+        <center><button><a href="contact.html">Vamos juntos</a></button></center>
         <br>
     </div>
+    <br>
+    <div>
+        <center>
+        <span><button><img class="Imagenes_productos" src="/src/DiseñoSoft.png" alt="Imagen Diseño de software" title="Diseño de software de escritorio"></button></span>
+            
+        <span><button><img class="Imagenes_productos" src="/src/DiseñoWeb.jpg" alt="Imagen Diseño web" title="Diseño web"></button></span>
+        </center>
+    </div>
+    <br>
+    <div>
+        <center>
+            <span><button><img class="Imagenes_productos" src="/src/Audio.jpg" alt="Imagen Diseño de Audio" title="Gestion y realizacion de spots de audio"></button></span>
+    
+            <span><button><img class="Imagenes_productos" src="/src/EdicionAudio.jpg" alt="Imagen Diseño edicion" title="Produccion y realizacion de sposts de video"></button></span>
 
+            <span><button><img class="Imagenes_productos" src="/src/Fotografia.jpg" alt="Imagen Diseño de software" title="Fotografia de productos y Eventos"></button></span>
+        </center>
+    </div>
+    <br>
+    <div>
+        <center>
+            <span><button><img class="Imagenes_productos" src="/src/Radio.jpg" alt="Imagen radio" title="Gestion de contenido para radios en linea y aire"></button></span>
+        </center>
+    </div>
     
 </body>
 <footer>
