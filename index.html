@@ -6,8 +6,8 @@
     <title>Santiago Collaud</title>
 
     <style>
-        img{
-            border-radius: 10%;
+        .perfil img{
+            border-radius: 50%;
         }
         body{
             background-image: url(/src/background\ gris.jpg);
@@ -16,7 +16,7 @@
         contenedor1
         {
             color: azure;
-            font-size: 50px;
+            font-size: 30px;
             font-family:'Courier New', Courier, monospace;
             
         }
@@ -24,24 +24,66 @@
             background-color: rgb(236, 235, 235);
             border: 2px solid rgb(73, 73, 73);
             border-radius: 5%;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-            font-style: italic;
+            font-family:Arial, Helvetica, sans-serif;
+            font-style: italic;   
         }    
+        button
+        {
+            background-color: rgb(236, 235, 235);
+            border: 0ch;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        button:hover {
+            background-color: #cac2c2;
+            border-radius: 30%;
+        }
+        
+        .contenedor2{
+            height:"100%";
+            width:"100%";
+            background-image: url(/src/Fondo_quien_soy.jpg);
+            position: relative; /* Establece el contenedor como posición relativa */
+            
+            
+        }
+        h2{
+            font-family:monospace;
+        }
     </style>
 </head>
 <body>
     
     <contenedor1>
-        <span><img src="/src/Autoretrato 2.jpg" alt="Foto de perfil" height="100px" width="110px"></span>
-        <span>Santiago Collaud</span>
+        <center>
+            <span class="perfil">
+                <img src="/src/Autoretrato 2.jpg" alt="Foto de perfil" height="200px" width="200px">
+            </span>
+        </center>
+        <center>
+            <span>Santiago Collaud</span>
+        </center>
     </contenedor1>
-    <nav><hr>
+
+    <nav><hr><center>
         <span><button><a href="/aboutMe.html">Sobre Mi</a></button></span>
         <span><button><a href="/contact.html">Contacto</a></button> </span>
         <span><button><a href="/Galeria.html">Galeria</a></button></span>
-        
         <hr>
-    </nav>
-   
+    </center></nav>
+    <div class="contenedor2">
+        <Span><center><h2>Me defino como una persona activa, predispuesto a colaborar, con ganas de crear y crecer. </h2></center></span>
+        <span><center><h2>Capaz de generar ideas y llevarlas a la realidad de la mejor manera y disfrutar de proceso.</h2></center></span>
+        <span><center><h2>Hacer grandes cosas es mi meta principal y quiero acompañarte en tus proyectos.</h2></center></span>
+        <hr>
+        <center><button>Vamos juntos</button></center>
+        <br>
+    </div>
+
+    
 </body>
+<footer>
+    <center>Santiago Collaud - 2024</center>
+</footer>
 </html>
