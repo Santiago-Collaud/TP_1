@@ -13,22 +13,89 @@
             background-color: rgb(236, 235, 235);
             border: 2px solid rgb(73, 73, 73);
             border-radius: 5%;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-            font-style: italic;
-            
-        }    
+            font-family:Arial, Helvetica, sans-serif;
+            font-style: italic;   
+        }
         button
         {
-            background-color: rgb(165, 169, 169);
+            background-color: rgb(236, 235, 235);
+            border: 0ch;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+        
+        button:hover {
+            background-color: #cac2c2;
             border-radius: 30%;
-        }  
+        }
+        .contenedor1
+        {
+            background-image: url(/src/BackgruondContacto.jpg);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            
+        }
+        h3{
+            margin-top: 10px;
+            margin-bottom: 2px;
+        }
+        .bordeSeccion
+        {
+            border: solid black;
+            height: 50%;
+            width: 50%;
+            background-color: #c9c8c8;
+        }
+        
     </style>
 </head>
 <body>
-    <nav>
+    <nav><hr>
+        <center>
         <span><button><a href="/index.html">Home</a></button></span>
         <span><button><a href="/contact.html">Contacto</a></button> </span>
         <span><button><a href="/Galeria.html">Galeria</a></button></span>
+        </center>
+        <hr>
     </nav>
+    <div class="contenedor1">
+        <br>
+        <center>
+        <section class="bordeSeccion">
+        <form action="contacto.html" method="GET">
+
+        <h3>E-Mail</h3></span>
+        <input type="email" name="Mail" id="Mail" size="30">
+        <h3>Nombre</h3>
+        <input type="text" name="Nombre" id="Nombre" size="30">
+        <h3>Apellido</h3>
+        <input type="text" name="Apellido" id="Apellido" size="30">
+        
+        
+        <h3><label for="Productos">Seleccione un producto para sonsultar</label><br></h3>
+        <select name="Productos" id="Productos" size="6">
+            <option value="DiseñoWeb">Diseño Web</option>
+            <option value="DiseñoSoftware">Diseño de software a medida</option>
+            <option value="Operacion">Operacion de Bandas</option>
+            <option value="ProduccionAudioyVideo">Produccion de audio y video</option>
+            <option value="Fotografia">Fotografia</option>
+            <option value="GestionDeRadios">Gestion de Emisoras de Radio</option>
+        </select>
+
+        <h3>Mensaje</h3>
+        <textarea nombre="Mensaje" cols="30"rows="10"></textarea>
+
+        <br>
+        <input type="button" value="Enviar">
+        <br>
+        <br>
+    </form>
+    </section>
+    </center>
+    </div>
 </body>
 </html>
