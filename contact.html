@@ -94,15 +94,41 @@
         </select>
 
         <h3>Mensaje</h3>
-        <textarea nombre="Mensaje" cols="30"rows="10"></textarea>
+        <textarea nombre="Mensaje" id="Mensaje" cols="30"rows="10"></textarea>
 
         <br>
-        <input type="button" value="Enviar">
+        <span><input type="button" value="Enviar"></span>
+        <span><input type="button" onclick="borrarDatos()" value="Limpiar"></span>
         <br>
         <br>
     </form>
     </section>
     </center>
     </div>
+
+    <script>
+        function borrarDatos(){
+            var MailInput = document.getElementById('Mail');
+            var NombreInput = document.getElementById('Nombre');
+            var ApellidoInput = document.getElementById('Apellido');
+            var EmpresaInput = document.getElementById('Empresa');
+            var TelefonoInput = document.getElementById('Telefono');
+            var MensajeInput = document.getElementById('Mensaje');
+            
+            var ProductosInput = document.getElementById('Productos');
+
+            // limpiar
+            MailInput.value=' ';
+            NombreInput.value=' ';
+            ApellidoInput.value=' ';
+            EmpresaInput.value= ' ';
+            TelefonoInput.value=' ';
+            MensajeInput.value= ' ';
+            
+            //selector
+            ProductosInput.selectedIndex=-1;
+
+        }
+    </script>
 </body>
 </html>
